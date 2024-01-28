@@ -1,0 +1,25 @@
+---
+title: "Hello, World!"
+description: |
+    A minimal first post
+date: "2024-01-28"
+date-modified: "2024-01-28"
+categories:
+  - quarto
+  - templates
+code-fold: true
+image: thumbnail.jpg
+image-alt: |
+    The text Hello, World` written in red monospaced font inside curly braces on a grey background.
+draft: false
+freeze: true
+appendix-style: default #(default, plain, none), decides what the citation looks like (I should change this allow customizing with paper citation)
+---
+
+# Hello
+This is a test article @juerssTest, or [@juerssTest]
+
+# World
+```
+print("Hello, World!")
+```
