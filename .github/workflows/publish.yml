@@ -4,7 +4,7 @@ on:
     branches: main
 
 name: Quarto Publish
-
+secrets: inherit
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -28,7 +28,6 @@ jobs:
         env:
           ZOTERO_USER: ${{ secrets.ZOTERO_USER }}
           ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
-        secrets: inherit
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
