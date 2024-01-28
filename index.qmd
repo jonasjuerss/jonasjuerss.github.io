@@ -1,7 +1,6 @@
 ---
-title: "mysite"
+title: "Jonas Jürß (Juerss)"
+from: markdown+emoji
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hi, I'm Jonas :wave: While this site is under construction, feel free to look me up on [LinkedIn](https://www.linkedin.com/in/jonas-juerss), [DBLP](https://dblp.uni-trier.de/pid/351/0471.html), or [Google Scholar](https://scholar.google.com/citations?user=RzWVQVYAAAAJ).
