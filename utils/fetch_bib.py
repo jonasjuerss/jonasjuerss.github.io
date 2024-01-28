@@ -20,6 +20,7 @@ if __name__ == "__main__":
     with open(os.path.join("library.bib"), 'w+', encoding="utf-8") as file:
         while page * args.page_size <= total_results:
             res = requests.get(f"{base_url}&start={page}", headers=headers)
+            res.raise_for_status()
             total_results = int(res.headers["Total-Results"])
             file.writelines(res.text + "\n")
             page += 1
