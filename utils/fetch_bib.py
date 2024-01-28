@@ -5,8 +5,10 @@ import requests
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--user", type=str, required=True, help="The (numerical) Zotero API user ID.")
-    parser.add_argument("--key", type=str, required=True, help="The Zotero API key.")
+    parser.add_argument("--user", type=str, default=os.environ.get("ZOTERO_USER", None),
+                        help="The (numerical) Zotero API user ID.")
+    parser.add_argument("--key", type=str, default=os.environ.get("ZOTERO_KEY", None),
+                        help="The Zotero API key.")
     parser.add_argument("--page_size", type=int, default=100, help="The number of entries per page.")
     args = parser.parse_args()
 
@@ -21,4 +23,4 @@ if __name__ == "__main__":
             total_results = int(res.headers["Total-Results"])
             file.writelines(res.text + "\n")
             page += 1
-            print(f"Loaded page {page}/{total_results // args.page_size}")
+            print(f"Loaded page {page}/{((total_results - 1) // args.page_size) + 1}")

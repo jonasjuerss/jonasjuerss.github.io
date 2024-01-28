@@ -24,7 +24,10 @@ jobs:
           cache: 'pip'
       - run: pip install jupyter
       - run: pip install -r requirements.txt
-      - run: python utils/fetch_bib.py --user ${{ secrets.ZOTERO_USER }} --key ${{ secrets.ZOTERO_KEY }}
+      - run: python utils/fetch_bib.py
+        env:
+          ZOTERO_USER: ${{ secrets.ZOTERO_USER }}
+          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
