@@ -6,10 +6,10 @@
       version="2.0">
 <channel>
 <title>Jonas Jürß</title>
-<link>https://jonasjuerss.github.io/blog.html</link>
-<atom:link href="https://jonasjuerss.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://jonasjuerss.com/blog.html</link>
+<atom:link href="https://jonasjuerss.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.4.549</generator>
-<lastBuildDate>Mon, 29 Jan 2024 07:32:49 GMT</lastBuildDate>
+<lastBuildDate>Mon, 29 Jan 2024 09:13:22 GMT</lastBuildDate>
 </channel>
 </rss>
