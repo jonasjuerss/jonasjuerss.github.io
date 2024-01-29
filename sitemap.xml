@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jonasjuerss.github.io/blog/2024-01-28-jupyter-test/index.html</loc>
-    <lastmod>2024-01-28T18:13:46.080Z</lastmod>
+    <loc>https://jonasjuerss.github.io/blog.html</loc>
+    <lastmod>2024-01-29T07:32:09.632Z</lastmod>
   </url>
   <url>
     <loc>https://jonasjuerss.github.io/index.html</loc>
-    <lastmod>2024-01-28T18:13:46.080Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jonasjuerss.github.io/blog.html</loc>
-    <lastmod>2024-01-28T18:13:46.060Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jonasjuerss.github.io/blog/2024-01-28-hello-world/index.html</loc>
-    <lastmod>2024-01-28T18:13:46.060Z</lastmod>
+    <lastmod>2024-01-29T07:32:09.656Z</lastmod>
   </url>
 </urlset>
