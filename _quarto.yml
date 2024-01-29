@@ -9,6 +9,26 @@ website:
         text: Home
       - href: blog.qmd
         text: Blog
+  twitter-card:
+    creator: "@JonasJuerss"
+  site-url: https://jonasjuerss.com
+  open-graph: true
+  page-footer:
+    #background: light
+    border: true
+    left: "Copyright 2024, Jonas Jürß."
+    center: ""
+    right:
+      - icon: github
+        href: "https://github.com/jonasjuerss"
+      - text: "{{< iconify academicons google-scholar >}}"
+        href: "https://scholar.google.com/citations?user=RzWVQVYAAAAJ"
+      - text: "{{< iconify academicons dblp >}}"
+        href: "https://dblp.uni-trier.de/pid/351/0471.html"
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jonas-juerss
+
+#  favicon: logo.png
 
 format:
   html:

@@ -1,6 +1,22 @@
 ---
 title: "Jonas Jürß (Juerss)"
 from: markdown+emoji
+about:
+  template: solana
+  links:
+    - text: "{{< iconify academicons google-scholar >}} Google Scholar"
+      href: "https://scholar.google.com/citations?user=RzWVQVYAAAAJ"
+    - text: "{{< iconify academicons dblp >}} DBLP"
+      href: "https://dblp.uni-trier.de/pid/351/0471.html"
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jonas-juerss
+    - icon: github
+      text: GitHub
+      href: "https://github.com/jonasjuerss"
+#    - icon: twitter
+#      text: twitter
+#      href: "https://twitter.com/zakvarty"
 ---
 
 Hi, I'm Jonas :wave: While this site is under construction, feel free to look me up on [LinkedIn](https://www.linkedin.com/in/jonas-juerss), [DBLP](https://dblp.uni-trier.de/pid/351/0471.html), or [Google Scholar](https://scholar.google.com/citations?user=RzWVQVYAAAAJ).
