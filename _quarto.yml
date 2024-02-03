@@ -4,6 +4,7 @@ project:
     - "publications/thumbnails/*.png"
     - "publications/posters/*.pdf"
     - "publications/posters/*.png"
+    - CNAME
 
 website:
   title: "Jonas Jürß"
