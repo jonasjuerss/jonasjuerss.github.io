@@ -1,6 +1,7 @@
 ---
 title: "Jonas Jürß (Juerss)"
 from: markdown+emoji
+toc: false
 about:
   template: solana
   links:
@@ -16,7 +17,22 @@ about:
       href: "https://github.com/jonasjuerss"
 #    - icon: twitter
 #      text: twitter
-#      href: "https://twitter.com/zakvarty"
+#      href: "https://twitter.com/jonasjuerss"
+listing:
+  - id: publications
+    contents: "publications/publications.yaml"
+    sort: "date desc"
+    template: html/publications/listing.ejs
+    categories: false 
+    filter-ui: false
+include-after-body:
+  text: |
+    <script type="application/javascript" src="html/image-dark-light.js"></script>
 ---
 
-Hi, I'm Jonas :wave: While this site is under construction, feel free to look me up on [LinkedIn](https://www.linkedin.com/in/jonas-juerss), [DBLP](https://dblp.uni-trier.de/pid/351/0471.html), or [Google Scholar](https://scholar.google.com/citations?user=RzWVQVYAAAAJ).
+Hi, I'm Jonas :wave: While this site is under construction, feel free to look me up on [LinkedIn](https://www.linkedin.com/in/jonas-juerss)
+
+## Publications
+
+:::{#publications}
+:::

@@ -10,9 +10,10 @@ date-format: long
 smooth-scroll: true
 
 # Default author
-author:
-  - name: Jonas Jürß
-    url: https://jonasjuerss.github.io/
+# Removed because affiliation, etc. should be custom on each post
+#author:
+#  - name: Jonas Jürß
+#    url: https://jonasjuerss.com/
 
 # citation
 citation: true

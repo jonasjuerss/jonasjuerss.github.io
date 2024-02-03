@@ -1,0 +1,26 @@
+```{=html}
+<!--<ul class="list">-->
+<% for (const item of items) { %>
+    <div <%= metadataAttrs(item) %> class="grid">
+        <div class="d-none d-lg-block g-col-md-3">
+            <img src="publications/thumbnails/<%- item.id %>-light.png" style="max-width:100%;max-height:4.5rem"/>
+        </div>
+        <div class="g-col-12 g-col-lg-9" style="text-align:left; font-size: 0.8rem">
+            <b><%= item.name %></b><br/>
+            <% for (const [i, author] of item.authors.entries()) { %>
+                <%= author === "Jonas Jürß" ? "<u>" + author + "</u>" : author %><%= item.authors.length > 2 && i < item.authors.length - 1 ? ", " : " " %>
+                <%= i == item.authors.length - 2 ? "and " : "" %>
+            <% } %><br/>
+            In <em><%= 'conference' in item ? item['conference'] : item['workshop'] %></em>, <%= item.year %>
+            <div class="about-links" style="flex-direction: row; column-gap:0.5em; padding-top: 0.25em">
+                <% for (const [link_k, link_v] of ('links' in item ? Object.entries(item['links']) : [])) { %>
+                    <a class="about-link" href="<%- link_v %>" style="font-size:0.8em; padding: .05em .4em">
+                        <span class="about-link-text"><%= link_k.toUpperCase() %></span>
+                    </a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+<% } %>
+<!--</ul>-->
+```
