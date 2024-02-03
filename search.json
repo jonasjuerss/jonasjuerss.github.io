@@ -11,6 +11,13 @@
     "href": "index.html",
     "title": "Jonas Jürß (Juerss)",
     "section": "",
-    "text": "Hi, I’m Jonas 👋 While this site is under construction, feel free to look me up on LinkedIn, DBLP, or Google Scholar."
+    "text": "Hi, I’m Jonas 👋 While this site is under construction, feel free to look me up on LinkedIn"
+  },
+  {
+    "objectID": "index.html#publications",
+    "href": "index.html#publications",
+    "title": "Jonas Jürß (Juerss)",
+    "section": "Publications",
+    "text": "Publications\n\n\n    \n        \n            \n        \n        \n            Recursive Algorithmic Reasoning\n                Jonas Jürß, \n                Dulhan Jayalath, \n                and \n                Petar Veličković \n            \n            In Proceedings of the Second Learning on Graphs Conference (LoG 2023), 2023\n            \n                    \n                        ORAL\n                    \n                    \n                        PAPER\n                    \n                    \n                        POSTER\n                    \n                    \n                        CODE\n                    \n            \n        \n    \n    \n        \n            \n        \n        \n            Everybody Needs a Little HELP: Explaining Graphs via Hierarchical Concepts\n                Jonas Jürß, \n                Lucie Charlotte Magister, \n                Pietro Barbiero, \n                Pietro Liò, \n                and \n                Nikola Simidjievski \n            \n            In NeurIPS 2023 Workshop: New Frontiers in Graph Learning, 2023\n            \n                    \n                        PAPER\n                    \n                    \n                        POSTER\n                    \n                    \n                        CODE\n                    \n            \n        \n    \n    \n        \n            \n        \n        \n            Recursive Reasoning with Neural Networks\n                Jonas Jürß \n                and \n                Dulhan Jayalath \n            \n            In The First Tiny Papers Track at ICLR 2023, 2023\n            \n                    \n                        PAPER\n                    \n                    \n                        CODE\n                    \n            \n        \n    \n\n\nNo matching items"
   }
 ]
