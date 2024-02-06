@@ -1,0 +1,2 @@
+include-after-body:
+  - html/swetrix.html
