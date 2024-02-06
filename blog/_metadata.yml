@@ -23,3 +23,6 @@ license: "CC BY"
 
 bibliography: ../../library.bib
 
+include-after-body:
+  - ../html/swetrix.html
+

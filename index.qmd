@@ -1,5 +1,5 @@
 ---
-title: "Jonas Jürß (Juerss)"
+title: "Jonas Jürß (Juerss)" # /jʏʀs/
 from: markdown+emoji
 toc: false
 about:
@@ -26,11 +26,12 @@ listing:
     categories: false 
     filter-ui: false
 include-after-body:
-  text: |
-    <script type="application/javascript" src="html/image-dark-light.js"></script>
+  - text: |
+      <script type="application/javascript" src="html/image-dark-light.js"></script>
+  - html/swetrix.html
 ---
 
-Hi, I'm Jonas. I'm originally from Germany where I received my BSc in Informatics at the [Technical University of Munich (TUM)](https://www.tum.de/) before coming to the [University of Cambridge](https://www.cam.ac.uk/) to pursue the MPhil in Advanced Computer Science under the supervision of [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/). 
+Hi, I'm Jonas. I'm originally from Germany where I received my BSc in Informatics from the [Technical University of Munich (TUM)](https://www.tum.de/) before coming to the [University of Cambridge](https://www.cam.ac.uk/) to pursue the MPhil in Advanced Computer Science under the supervision of [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/). 
 
 Currently, I am working as a Machine Learning Engineer at [Cambridge Consultants](https://www.cambridgeconsultants.com/). 
 My research interests are broadly in the fields of Explainability and Graph Neural Networks (independently as well as in combination). 
