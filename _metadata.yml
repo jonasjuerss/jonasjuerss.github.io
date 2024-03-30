@@ -1,2 +1,2 @@
-include-after-body:
-  - html/swetrix.html
+include-in-header:
+  - html/tracking.html

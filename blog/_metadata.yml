@@ -16,13 +16,13 @@ smooth-scroll: true
 #    url: https://jonasjuerss.com/
 
 # citation
-citation: true
+citation: false
 
 # Enable CC licence appendix
-license: "CC BY"
+# license: "CC BY"
 
 bibliography: ../../library.bib
 
-include-after-body:
-  - ../html/swetrix.html
+include-in-header:
+  - ../html/tracking.html
 
