@@ -11,6 +11,9 @@
                 <%= author === "Jonas Jürß" ? "<u>" + author + "</u>" : author %><%= item.authors.length > 2 && i < item.authors.length - 1 ? ", " : " " %>
                 <%= i == item.authors.length - 2 ? "and " : "" %>
             <% } %><br/>
+            <% if(item["highlight"]) {%>
+                ✨ <b><%= item.highlight %></b>:
+            <% } %>
             In <em><%= 'conference' in item ? item['conference'] : item['workshop'] %></em>, <%= item.year %>
             <div class="about-links" style="flex-direction: row; column-gap:0.5em; padding-top: 0.25em">
                 <% for (const [link_k, link_v] of ('links' in item ? Object.entries(item['links']) : [])) { %>

@@ -1,9 +1,10 @@
 - name: Recursive Algorithmic Reasoning
-  conference: Proceedings of the Second Learning on Graphs Conference (LoG 2023)
-  workshop: "ICML 2023 Workshop: Knowledge and Logical Reasoning in the Era of Data-driven Learning"
+  conference: "Proceedings of the Second Learning on Graphs Conference (LoG), PMLR 231"
+  workshop: "ICML Workshop: Knowledge and Logical Reasoning in the Era of Data-driven Learning"
+  highlight: Spotlight
   year: 2023
   links:
-    # TODO have different icons for those categories
+    # different icons for those categories
     oral: https://www.youtube.com/watch?v=U5oHXGcHBdk&t=54
     paper: https://openreview.net/pdf?id=43M1bPorxU # TODO update with PMLR
     poster: https://openreview.net/attachment?id=43M1bPorxU&name=poster
@@ -16,7 +17,7 @@
     - Petar Veličković
 
 - name: "Everybody Needs a Little HELP: Explaining Graphs via Hierarchical Concepts"
-  workshop: "NeurIPS 2023 Workshop: New Frontiers in Graph Learning"
+  workshop: "NeurIPS Workshop: New Frontiers in Graph Learning"
   year: 2023
   id: help-2023
   links:
@@ -31,7 +32,7 @@
     - Nikola Simidjievski
 
 - name: Recursive Reasoning with Neural Networks
-  conference: The First Tiny Papers Track at ICLR 2023
+  conference: The First Tiny Papers Track at ICLR
   year: 2023
   id: recursive-nns-tiny-2023
   links:
