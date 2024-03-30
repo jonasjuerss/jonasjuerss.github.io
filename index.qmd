@@ -1,5 +1,6 @@
 ---
-title: "Jonas Jürß (Juerss)" # /jʏʀs/
+pagetitle: Jonas Jürß (Juerss)
+title: "Jonas Jürß (Juerss, [/jʏʀs/](http://ipa-reader.xyz/?text=j%CA%8F%CA%80s&voice=Marlene))" # ^[footnote text.]" # /jʏʀs/
 from: markdown+emoji
 toc: false
 about:
