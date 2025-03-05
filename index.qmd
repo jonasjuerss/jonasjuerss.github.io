@@ -31,12 +31,20 @@ include-after-body:
       <script type="application/javascript" src="html/image-dark-light.js"></script>
 ---
 
-Hi, I'm Jonas. I'm originally from Germany where I received my BSc in Informatics from the [Technical University of Munich (TUM)](https://www.tum.de/) before coming to the [University of Cambridge](https://www.cam.ac.uk/) to pursue the MPhil in Advanced Computer Science under the supervision of [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/). 
+Hi, I'm Jonas. I'm currently pursuing a PhD in Machine Learning at the
+[University of Cambridge](https://www.cam.ac.uk/) under the supervision of
+[Pietro Liò](https://www.cl.cam.ac.uk/~pl219/).
 
-Currently, I am working as a Machine Learning Engineer at [Cambridge Consultants](https://www.cambridgeconsultants.com/). 
-My research interests are broadly in the fields of Explainability and Graph Neural Networks (independently as well as in combination). 
-However, the underlying motivation of understanding how machine learning models work stretches pretty much across all fields, so feel free to [reach out](mailto:jj570@cantab.ac.uk) about anything that interests you.
+Prior to this, I worked as a Machine Learning Engineer at
+[Cambridge Consultants](https://www.cambridgeconsultants.com/) and received an MPhil in
+Advanced Computer Science from Cambridge as well as a BSc in Informatics from the
+[Technical University of Munich (TUM)](https://www.tum.de/).
 
+My research interests are broadly in the fields of Explainability and Graph Neural
+Networks (independently as well as in combination).
+However, the underlying motivation of understanding how machine learning models work
+stretches pretty much across all fields, so feel free to
+[reach out](mailto:jj570@cantab.ac.uk) about anything that interests you.
 
 ## Publications
 

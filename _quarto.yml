@@ -22,7 +22,7 @@ website:
   page-footer:
     #background: light
     border: true
-    left: "© 2024, Jonas Jürß."
+    left: "© 2024 - 2025, Jonas Jürß."
     center: ""
     right:
       - icon: github
