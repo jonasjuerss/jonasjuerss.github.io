@@ -8,7 +8,7 @@
     oral: https://www.youtube.com/watch?v=U5oHXGcHBdk&t=54
     paper: https://proceedings.mlr.press/v231/jurss24a.html
     poster: https://openreview.net/attachment?id=43M1bPorxU&name=poster
-    code: https://proceedings.mlr.press/v231/jurss24a/jurss24a.pdf
+    code: https://github.com/DJayalath/gnn-call-stack/
     # blogpost ???
   id: rar-2023 # Will be used e.g. for the thumbnail
   authors:
