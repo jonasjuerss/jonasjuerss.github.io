@@ -44,7 +44,7 @@ My research interests are broadly in the fields of Explainability and Graph Neur
 Networks (independently as well as in combination).
 However, the underlying motivation of understanding how machine learning models work
 stretches pretty much across all fields, so feel free to
-[reach out](mailto:jj570@cantab.ac.uk) about anything that interests you.
+[reach out](mailto:jj570@cl.cam.ac.uk) about anything that interests you.
 
 ## Publications
 
