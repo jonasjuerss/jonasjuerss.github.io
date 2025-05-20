@@ -5,7 +5,7 @@
         <div class="d-none d-lg-block g-col-md-3">
             <img src="publications/thumbnails/<%- item.id %>-light.png" style="max-width:100%;max-height:4.5rem"/>
         </div>
-        <div class="g-col-12 g-col-lg-9" style="text-align:left; font-size: 0.8rem">
+        <div class="g-col-12 g-col-lg-9" style="text-align:left; font-size: 0.8rem; margin-bottom: 1em;">
             <b><%= item.name %></b><br/>
             <% for (const [i, author] of item.authors.entries()) { %>
                 <%= author === "Jonas Jürß" ? "<u>" + author + "</u>" : author %><%= item.authors.length > 2 && i < item.authors.length - 1 ? ", " : " " %>
