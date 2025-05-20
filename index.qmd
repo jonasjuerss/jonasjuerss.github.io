@@ -3,8 +3,11 @@ pagetitle: Jonas Jürß (Juerss)
 title: "Jonas Jürß (Juerss, [/jʏʀs/](http://ipa-reader.xyz/?text=j%CA%8F%CA%80s&voice=Marlene))" # ^[footnote text.]" # /jʏʀs/
 from: markdown+emoji
 toc: false
+image: media/avatar.jpeg
 about:
-  template: solana
+  template: html/custom-theme/jolla.ejs.html # jolla
+  image-shape: round
+  image-width: 17em
   links:
     - text: "{{< iconify academicons google-scholar >}} Google Scholar"
       href: "https://scholar.google.com/citations?user=RzWVQVYAAAAJ"
@@ -32,19 +35,20 @@ include-after-body:
 ---
 
 Hi, I'm Jonas. I'm currently pursuing a PhD in Machine Learning at the
-[University of Cambridge](https://www.cam.ac.uk/) under the supervision of
+[University of Cambridge](https://www.cam.ac.uk/) in the 
+[CaRAML](https://caraml-group.github.io/) group under the supervision of
 [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/).
-
-Prior to this, I worked as a Machine Learning Engineer at
-[Cambridge Consultants](https://www.cambridgeconsultants.com/) and received an MPhil in
-Advanced Computer Science from Cambridge as well as a BSc in Informatics from the
-[Technical University of Munich (TUM)](https://www.tum.de/).
 
 My research interests are broadly in the fields of Explainability and Graph Neural
 Networks (independently as well as in combination).
 However, the underlying motivation of understanding how machine learning models work
 stretches pretty much across all fields, so feel free to
 [reach out](mailto:jj570@cl.cam.ac.uk) about anything that interests you.
+
+Prior to this, I worked as a Machine Learning Engineer at
+[Cambridge Consultants](https://www.cambridgeconsultants.com/) and received an MPhil in
+Advanced Computer Science from Cambridge as well as a BSc in Informatics from the
+[Technical University of Munich (TUM)](https://www.tum.de/).
 
 ## Publications
 
