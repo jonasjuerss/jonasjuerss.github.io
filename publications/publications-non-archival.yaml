@@ -1,0 +1,26 @@
+- name: Rethinking Test Generalisation In Neural Algorithmic Reasoning
+  id: inar-2025
+  workshop: "The Fourth Learning on Graphs Conference (LoG, Extended Abstracts Track)"
+  year: 2025
+  authors:
+    - Manasvi Aggarwal
+    - Dulhan Jayalath
+    - Jonas Jürß
+  links:
+    paper: https://openreview.net/pdf?id=mX0tP6kivu
+    poster: https://openreview.net/attachment?id=mX0tP6kivu&name=poster
+
+- name: "Everybody Needs a Little HELP: Explaining Graphs via Hierarchical Concepts"
+  workshop: "NeurIPS Workshop: New Frontiers in Graph Learning"
+  year: 2023
+  id: help-2023
+  links:
+    paper: https://arxiv.org/pdf/2311.15112.pdf
+    poster: https://jonasjuerss.com/publications/posters/help-2023.pdf
+    code: https://github.com/jonasjuerss/HELP
+  authors:
+    - Jonas Jürß
+    - Lucie Charlotte Magister
+    - Pietro Barbiero
+    - Pietro Liò
+    - Nikola Simidjievski

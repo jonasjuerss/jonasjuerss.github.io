@@ -16,21 +16,6 @@
     - Dulhan Jayalath
     - Petar Veličković
 
-- name: "Everybody Needs a Little HELP: Explaining Graphs via Hierarchical Concepts"
-  workshop: "NeurIPS Workshop: New Frontiers in Graph Learning"
-  year: 2023
-  id: help-2023
-  links:
-    paper: https://arxiv.org/pdf/2311.15112.pdf
-    poster: https://jonasjuerss.com/publications/posters/help-2023.pdf
-    code: https://github.com/jonasjuerss/HELP
-  authors:
-    - Jonas Jürß
-    - Lucie Charlotte Magister
-    - Pietro Barbiero
-    - Pietro Liò
-    - Nikola Simidjievski
-
 - name: Recursive Reasoning with Neural Networks
   conference: The First Tiny Papers Track at ICLR
   year: 2023

@@ -23,9 +23,13 @@ about:
 #      text: twitter
 #      href: "https://twitter.com/jonasjuerss"
 listing:
-  - id: publications
-    contents: "publications/publications.yaml"
-    sort: "date desc"
+  - id: publications-archival
+    contents: "publications/publications-archival.yaml"
+    template: html/publications/listing.ejs
+    categories: false 
+    filter-ui: false
+  - id: publications-non-archival
+    contents: "publications/publications-non-archival.yaml"
     template: html/publications/listing.ejs
     categories: false 
     filter-ui: false
@@ -39,9 +43,8 @@ Hi, I'm Jonas. I'm currently pursuing a PhD in Machine Learning at the
 [CaRAML](https://caraml-group.github.io/) group under the supervision of
 [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/).
 
-My research interests are broadly in the fields of Explainability and Graph Neural
-Networks (independently as well as in combination).
-However, the underlying motivation of understanding how machine learning models work
+My research interests are broadly in the fields of (Mechanistic) Interpretability and Graph Neural Networks. I am also a member of the [WISDOM](https://wisdomhorizon.eu/) consortium, developing predictive models for complex diseases (in particular multiple sclerosis).
+However, the underlying motivation of understanding the inner workings of neural networks
 stretches pretty much across all fields, so feel free to
 [reach out](mailto:jj570@cl.cam.ac.uk) about anything that interests you.
 
@@ -52,5 +55,10 @@ Advanced Computer Science from Cambridge as well as a BSc in Informatics from th
 
 ## Publications
 
-:::{#publications}
+### Archival
+:::{#publications-archival}
+:::
+
+### Non-Archival
+:::{#publications-non-archival}
 :::
