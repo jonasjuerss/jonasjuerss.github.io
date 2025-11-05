@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,17 +35,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1307ce083c0e97fb8ec87cffc4cf8dd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-00e681fa139a75f57473fe53573e8029.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-1307ce083c0e97fb8ec87cffc4cf8dd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-00880fea4e27ae78085fa25767c31068.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-cd05260ddbd3317f951412928e8cd181.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-00880fea4e27ae78085fa25767c31068.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -77,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-publications .list');
+    const listingTargetEl = window.document.querySelector('#listing-publications-archival .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -90,7 +91,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-publications'] = new List('listing-publications', options);
+    window['quarto-listings']['listing-publications-archival'] = new List('listing-publications-archival', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publications-non-archival .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-id','listing-workshop','listing-year','listing-authors','listing-links',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-id","listing-workshop","listing-year","listing-authors","listing-links"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publications-non-archival'] = new List('listing-publications-non-archival', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -122,7 +151,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -319,6 +348,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Jonas Jürß</span>
     </a>
@@ -380,7 +411,7 @@ window.Quarto = {
     <main class="content" id="quarto-document-content">
 
 <p>Hi, I’m Jonas. I’m currently pursuing a PhD in Machine Learning at the <a href="https://www.cam.ac.uk/">University of Cambridge</a> in the <a href="https://caraml-group.github.io/">CaRAML</a> group under the supervision of <a href="https://www.cl.cam.ac.uk/~pl219/">Pietro Liò</a>.</p>
-<p>My research interests are broadly in the fields of Explainability and Graph Neural Networks (independently as well as in combination). However, the underlying motivation of understanding how machine learning models work stretches pretty much across all fields, so feel free to <script type="text/javascript">
+<p>My research interests are broadly in the fields of (Mechanistic) Interpretability and Graph Neural Networks. I am also a member of the <a href="https://wisdomhorizon.eu/">WISDOM</a> consortium, developing predictive models for complex diseases (in particular multiple sclerosis). However, the underlying motivation of understanding the inner workings of neural networks stretches pretty much across all fields, so feel free to <script type="text/javascript">
 <!--
 h='&#x63;&#108;&#46;&#x63;&#x61;&#x6d;&#46;&#x61;&#x63;&#46;&#x75;&#x6b;';a='&#64;';n='&#106;&#106;&#x35;&#x37;&#48;';e=n+a+h;
 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#114;&#x65;&#x61;&#x63;&#104;&#32;&#x6f;&#x75;&#116;'+'<\/'+'a'+'>');
@@ -389,7 +420,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#11
 <p>Prior to this, I worked as a Machine Learning Engineer at <a href="https://www.cambridgeconsultants.com/">Cambridge Consultants</a> and received an MPhil in Advanced Computer Science from Cambridge as well as a BSc in Informatics from the <a href="https://www.tum.de/">Technical University of Munich (TUM)</a>.</p>
 <section id="publications" class="level2">
 <h2 data-anchor-id="publications">Publications</h2>
-<div id="listing-publications" class="quarto-listing quarto-listing-container-custom">
+<section id="archival" class="level3">
+<h3 data-anchor-id="archival">Archival</h3>
+<div id="listing-publications-archival" class="quarto-listing quarto-listing-container-custom">
 <!--<ul class="list">-->
     <div data-index="0" class="grid">
         <div class="d-none d-lg-block g-col-md-3">
@@ -422,6 +455,57 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#11
     </div>
     <div data-index="1" class="grid">
         <div class="d-none d-lg-block g-col-md-3">
+            <img src="publications/thumbnails/recursive-nns-tiny-2023-light.png" style="max-width:100%;max-height:4.5rem">
+        </div>
+        <div class="g-col-12 g-col-lg-9" style="text-align:left; font-size: 0.8rem; margin-bottom: 1em;">
+            <b>Recursive Reasoning with Neural Networks</b><br>
+                <u>Jonas Jürß</u> 
+                and 
+                Dulhan Jayalath 
+            <br>
+            In <em>The First Tiny Papers Track at ICLR</em>, 2023
+            <div class="about-links" style="flex-direction: row; column-gap:0.5em; padding-top: 0.25em">
+                    <a class="about-link" href="https://openreview.net/pdf?id=TS8l4VS7_BK" style="font-size:0.8em; padding: .05em .4em">
+                        <span class="about-link-text">PAPER</span>
+                    </a>
+                    <a class="about-link" href="https://github.com/DJayalath/gnn-call-stack/" style="font-size:0.8em; padding: .05em .4em">
+                        <span class="about-link-text">CODE</span>
+                    </a>
+            </div>
+        </div>
+    </div>
+<!--</ul>-->
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="non-archival" class="level3">
+<h3 data-anchor-id="non-archival">Non-Archival</h3>
+<div id="listing-publications-non-archival" class="quarto-listing quarto-listing-container-custom">
+<!--<ul class="list">-->
+    <div data-index="0" class="grid">
+        <div class="d-none d-lg-block g-col-md-3">
+            <img src="publications/thumbnails/inar-2025-light.png" style="max-width:100%;max-height:4.5rem">
+        </div>
+        <div class="g-col-12 g-col-lg-9" style="text-align:left; font-size: 0.8rem; margin-bottom: 1em;">
+            <b>Rethinking Test Generalisation In Neural Algorithmic Reasoning</b><br>
+                Manasvi Aggarwal, 
+                Dulhan Jayalath, 
+                and 
+                <u>Jonas Jürß</u> 
+            <br>
+            In <em>The Fourth Learning on Graphs Conference (LoG, Extended Abstracts Track)</em>, 2025
+            <div class="about-links" style="flex-direction: row; column-gap:0.5em; padding-top: 0.25em">
+                    <a class="about-link" href="[object Object]" style="font-size:0.8em; padding: .05em .4em">
+                        <span class="about-link-text">0</span>
+                    </a>
+                    <a class="about-link" href="[object Object]" style="font-size:0.8em; padding: .05em .4em">
+                        <span class="about-link-text">1</span>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div data-index="1" class="grid">
+        <div class="d-none d-lg-block g-col-md-3">
             <img src="publications/thumbnails/help-2023-light.png" style="max-width:100%;max-height:4.5rem">
         </div>
         <div class="g-col-12 g-col-lg-9" style="text-align:left; font-size: 0.8rem; margin-bottom: 1em;">
@@ -447,32 +531,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#11
             </div>
         </div>
     </div>
-    <div data-index="2" class="grid">
-        <div class="d-none d-lg-block g-col-md-3">
-            <img src="publications/thumbnails/recursive-nns-tiny-2023-light.png" style="max-width:100%;max-height:4.5rem">
-        </div>
-        <div class="g-col-12 g-col-lg-9" style="text-align:left; font-size: 0.8rem; margin-bottom: 1em;">
-            <b>Recursive Reasoning with Neural Networks</b><br>
-                <u>Jonas Jürß</u> 
-                and 
-                Dulhan Jayalath 
-            <br>
-            In <em>The First Tiny Papers Track at ICLR</em>, 2023
-            <div class="about-links" style="flex-direction: row; column-gap:0.5em; padding-top: 0.25em">
-                    <a class="about-link" href="https://openreview.net/pdf?id=TS8l4VS7_BK" style="font-size:0.8em; padding: .05em .4em">
-                        <span class="about-link-text">PAPER</span>
-                    </a>
-                    <a class="about-link" href="https://github.com/DJayalath/gnn-call-stack/" style="font-size:0.8em; padding: .05em .4em">
-                        <span class="about-link-text">CODE</span>
-                    </a>
-            </div>
-        </div>
-    </div>
 <!--</ul>-->
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 
 
+</section>
 </section>
 </main>
 </div>
@@ -534,13 +598,14 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#11
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
