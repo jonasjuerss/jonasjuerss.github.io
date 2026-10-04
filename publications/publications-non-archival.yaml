@@ -1,3 +1,25 @@
+- name: Towards Identifying the Dataset Biases Causing Phantom Transfer
+  id: phantom-transfer-bias-2026
+  workshop: "arXiv Preprint"
+  year: 2026
+  authors:
+    - Jonas Jürß
+    - Pietro Liò
+  links:
+    paper: https://arxiv.org/pdf/2609.14449
+
+- name: "DynSHAP: Towards Explainable Dynamic Survival Analysis"
+  id: dynamic-survival-shap-2026
+  workshop: "NeurIPS Workshop: Responsible Communication of Machine Learning Research in Biomedicine"
+  year: 2026
+  authors:
+    - Nastasya Anokhina
+    - Jonas Jürß
+    - Pietro Liò
+  links:
+    paper: https://arxiv.org/pdf/2609.13042
+    code: https://github.com/tasyaa04/dynShap
+
 - name: Rethinking Test Generalisation In Neural Algorithmic Reasoning
   id: inar-2025
   workshop: "The Fourth Learning on Graphs Conference (LoG, Extended Abstracts Track)"
