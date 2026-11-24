@@ -18,6 +18,7 @@
     - Pietro Liò
   links:
     paper: https://arxiv.org/pdf/2609.13042
+    poster: https://jonasjuerss.com/publications/posters/dynshap-2026.pdf
     code: https://github.com/tasyaa04/dynShap
 
 - name: Rethinking Test Generalisation In Neural Algorithmic Reasoning
